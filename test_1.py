@@ -55,5 +55,5 @@ spark.sql("SELECT * FROM datas WHERE HP > 20 ORDER BY HP").show()
 # In[ ]:
 
 
-data_1.write.format("json").mode("overwrite").option("path","hdfs:///user/maria_dev/pokemon/ketqua/").partitionBy("Time").save()
+data_1.write.format("json").mode("overwrite").option("path","hdfs:///user/maria_dev/pokemon/ketqua/").partitionBy("Type 1").save()
 
